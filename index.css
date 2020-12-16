@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrap{
+    height: 100%;
+}
+
+.top_container{
+    background: #e2caef;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 0;
+    text-align: center;
+
+    font-family: 'Bebas Neue', cursive;
+}
+.top_container img{
+    margin-top: 70px;
+}
+.top_container .txt{
+    font-size: 60px;
+    margin-top: 30px;
+}
+
+
+.bottom_container{
+    position: relative;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+    margin-top: 100vh;
+    background: white;
+}
