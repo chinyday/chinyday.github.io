@@ -55,7 +55,7 @@ a:visited {
 }
 .bottom_container nav ul {
     padding: 40px;
-    width: 850px;
+    width: 510px;
     margin: 0 auto;
 }
 .bottom_container nav ul > li{ 
@@ -69,4 +69,29 @@ a:visited {
     border: 1px solid #ddd;
     border-radius: 50px;
     box-sizing: border-box;
+    
 }
+
+.bottom_container section{
+    width: 90%;
+    margin: 0 auto 50px;
+    background: aquamarine;
+}
+
+.bottom_container section .title{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 23px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+    width: 150px;
+    margin-bottom: 20px; 
+}
+
+.bottom_container section .container .contents{
+    float: left;
+    width: 33%;
+}
+.bottom_container section .more_info{
+clear: both;
+}
+    
