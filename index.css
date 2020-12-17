@@ -3,12 +3,6 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-a{
-    text-decoration: none;
-}
-a:visited {
-    color: inherit;
-}
 .clearfix::after {
     content: "";
     clear: both;
@@ -32,17 +26,15 @@ a:visited {
     right: 0px;
     z-index: 0;
     text-align: center;
-
     font-family: 'Bebas Neue', cursive;
 }
 .top_container img{
-    margin-top: 70px;
+    margin-top: 120px;
 }
 .top_container .txt{
     font-size: 60px;
     margin-top: 30px;
 }
-
 
 /* bottom_container */
 .bottom_container{
@@ -54,7 +46,7 @@ a:visited {
     padding-bottom: 500px;
 }
 .bottom_container nav ul {
-    padding: 40px;
+    padding: 40px 40px 100px 40px;
     width: 510px;
     margin: 0 auto;
 }
@@ -73,25 +65,125 @@ a:visited {
 }
 
 .bottom_container section{
-    width: 90%;
-    margin: 0 auto 50px;
-    background: aquamarine;
+    width: 80%;
+    margin: 0 auto 150px;
 }
 
 .bottom_container section .title{
     font-family: 'Bebas Neue', cursive;
-    font-size: 23px;
+    font-size: 30px;
     padding-bottom: 5px;
     border-bottom: 1px solid #000;
     width: 150px;
     margin-bottom: 20px; 
 }
 
-.bottom_container section .container .contents{
+/* works section */
+.section1 .list{
+    padding: 50px 0;
+}
+.section1 .list li{
     float: left;
     width: 33%;
+    text-align: center;
 }
-.bottom_container section .more_info{
-clear: both;
+.section1 .list li img{
+    width: 90%;
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
 }
-    
+
+.list .prj{
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+.list .prj:after,
+.list .prj .txt {
+    position: absolute;
+    top: 35%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.list .prj:after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0;
+}
+.list .prj .txt {
+    z-index: 1;
+    padding: 40px;
+    width: 100%;
+    margin: 5px 0;
+    padding: 0;
+    line-height: 1.1em;
+    font-weight: 700;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+.list .prj:hover img{
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+.list .prj:hover:after{
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 20px;
+  right: 20px;
+}
+.list .prj:hover .txt{
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+
+.section1 .more_btn{
+    width: 100px;
+    height: 30px;
+    line-height: 2;
+    text-align: center;
+    border: 1px solid;
+    transition: 0.5s;
+    float: right;
+}
+.section1 .more_btn:hover{
+    background: #e2caef;
+    color: #fff;
+}
+
+/* skills section */
+.section2 .contents li{
+    float: left;
+}
+.section2 .more_info{
+    clear: both;
+} 
+.section2 .contents img{
+    width: 100px;
+    margin: 25px 40px;
+}
+.section2 .contents span{
+    vertical-align: super;
+    padding-left: 7px;
+}
+
+.section2 .contents .sub_title{
+    margin: 30px 0 0 20px;
+    color: #333;
+    font-size: 20px;
+}

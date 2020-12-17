@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="reset.css"> 
-    <link type="text/css" rel="stylesheet" href="index.css">   
+    <link rel="stylesheet" type="text/css" href="reset.css"> 
+    <link rel="stylesheet" type="text/css" href="index.css">   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>jinkyung's</title>
 </head>
 <body>
@@ -16,47 +17,55 @@
         <div class="bottom_container">
             <nav>
                 <ul class="clearfix">
-                    <li><a href="works/list.html">work</a></li>
+                    <li><a href="work/list.html">work</a></li>
                     <li><a href="https://github.com/chinyday" target="_blank">github</a></li>
-                    <li>contact</li>
+                    <li><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
 
-            <!-- 내소개 -->
-            <section>
-
-              
-
+            <!-- works -->
+            <section class="section1">
+                <h2 class="title">works</h2>
+                <div class="container clearfix">
+                    <ul class="clearfix list">
+                        <li class="prj">
+                            <a><img src="img/proj/img05.png"></a>
+                            <div class="txt">title</div>
+                        </li>
+                        <li class="prj">
+                            <a><img src="img/proj/img05.png"></a>
+                            <div class="txt">title</div></li>
+                        <li class="prj">
+                            <a><img src="img/proj/img05.png"></a>
+                            <div class="txt">title</div>
+                        </li>
+                    </ul>
+                    <div class="more_btn"><a href="works/list.html">more view</a></div>
+                </div>
             </section>
 
-            <!-- 스킬 -->
-            <section>
+            <!-- skills -->
+            <section class="section2">
                 <h2 class="title">skills</h2>
-
-                <div class="container clearfix">
+                <div class="container ">
                     <div class="contents">
-                        <p>Familiar</p>
-                        <ul>
-                            <li>html5</li>
-                            <li>css</li>
-                            <li>bootstrap</li>
-                        </ul>
-                         </div>
-                    <div class="contents">
-                        <p>Familiar</p>
-                        <ul>
-                            <li>javascript</li>
-                            <li>jQuery</li>
-                            <li>Less</li>
-                            <li>Git</li>
+                        <h3 class="sub_title">Familiar</h3>
+                        <ul class="clearfix">
+                            <li><img src="img/icon/html.png"></li>
+                            <li><img src="img/icon/css.png"></li>
+                            <li><img src="img/icon/bootstrap.png"></li>
+                            <li><img src="img/icon/javascript.png"></li>
+                            <li><img src="img/icon/jq.png"></li>
                         </ul>
                     </div>
                     <div class="contents">
-                        <p>Tried</p>
-                        <ul>
-                            <li>Sass/Scss</li>
-                            <li>Vue</li>
-                            <li>PHOTOSHOP</li>
+                        <h3 class="sub_title">Tried</h3>
+                        <ul class="clearfix">
+                            <li><img src="img/icon/less.png"></li>
+                            <li><img src="img/icon/sass.png"></li>
+                            <li><img src="img/icon/vue.png"></li>
+                            <li><img src="img/icon/git.png"></li>
+                            <li><img src="img/icon/photoshop.png"></li>
                         </ul>
                     </div>
 
@@ -69,11 +78,9 @@
                         <p>마크업 웹 표준을 바탕으로 꼼꼼한 시멘틱 마크업을 작성</p>
                         <p>유지보수를 고려한 코드 작성, 협업을 위한 가이드 제작 등 탄탄한 업무 프로세스를</p>
                     
-                    
                     </div>
                 </div>
             </section>
-            <section></section>
        </div>
     </div>
 </body>

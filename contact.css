@@ -1,0 +1,24 @@
+.contact-info{
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 9999;
+}
+.contact-info .option{
+    cursor: pointer; 
+    position: relative;
+}
+.option span{
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #b2bec3;
+    background-color: #dfe6e9;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.option:hover span{
+    color: #e2caef;
+}
