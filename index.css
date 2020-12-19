@@ -28,8 +28,11 @@ body{
     text-align: center;
     font-family: 'Bebas Neue', cursive;
 }
-.top_container img{
-    margin-top: 120px;
+.top_container .contents{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -52%);
 }
 .top_container .txt{
     font-size: 60px;
@@ -66,7 +69,8 @@ body{
 
 .bottom_container section{
     width: 80%;
-    margin: 0 auto 150px;
+    margin: 0 auto;
+    padding: 100px 0 50px;
 }
 
 .bottom_container section .title{
@@ -136,6 +140,7 @@ body{
   filter: alpha(opacity=50);
   -webkit-opacity: 0.5;
   opacity: 0.5;
+  filter: blur(1px);
 }
 .list .prj:hover:after{
   opacity: 1;
@@ -170,12 +175,10 @@ body{
 .section2 .contents li{
     float: left;
 }
-.section2 .more_info{
-    clear: both;
-} 
 .section2 .contents img{
     width: 100px;
     margin: 25px 40px;
+    filter: drop-shadow(2px 3px 4px black);
 }
 .section2 .contents span{
     vertical-align: super;
@@ -186,4 +189,50 @@ body{
     margin: 30px 0 0 20px;
     color: #333;
     font-size: 20px;
+}
+
+.section2 .more_info{
+    clear: both;
+    margin: 50px 0 0 20px;
+} 
+
+/* sabout me section */
+.section3 .container{
+    text-align: center;
+}
+.section3 .container .motto{
+    position:relative;
+    margin: 40px;
+    color: #ddd;
+}
+
+.section3 .container .motto:before,
+.section3 .container .motto::after{
+    content: '';
+    width: 100px;
+    position: absolute;
+    border-top: 1px solid #ddd;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.section3 .container .motto:before{
+    top: -20px; 
+}
+.section3 .container .motto::after{
+    bottom: -20px;
+}
+.section3 .container .info{
+    padding-top: 40px;
+}
+
+/* contact section */
+.section4 .container{
+    margin: 30px 0 0 20px;
+}
+.section4 .container p{
+    line-height: 30px;
+}
+.section4 .container p span{
+    display: inline-block;
+    width: 70px;
 }
