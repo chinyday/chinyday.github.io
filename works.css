@@ -1,24 +1,66 @@
-.contact-info{
-    position: fixed;
-    top: 30%;
-    left: 0;
-    z-index: 9999;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
 }
-.contact-info .option{
-    cursor: pointer; 
-    position: relative;
-}
-.option span{
+.clearfix::after {
+    content: "";
+    clear: both;
     display: block;
-    width: 60px;
+}
+
+/*  */
+#wrap{
+    height: 100%;
+}
+
+.gnb{
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    -webkit-box-shadow: 0px 3px 6px -2px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0px 3px 6px -2px #ccc; /* Firefox 3.5 - 3.6 */
+    box-shadow:         0px 3px 6px -2px #ccc;
+}
+.gnb ul{
+    float: right;
+    margin-right: 30px;
+}
+.gnb li{
+    float: left;
     height: 60px;
     line-height: 60px;
-    text-align: center;
-    color: #b2bec3;
-    background-color: #dfe6e9;
-    font-size: 20px;
-    transition: 0.5s;
+    margin: 0 10px;
 }
-.option:hover span{
-    color: #e2caef;
+
+/* works_container */
+.works_container{
+    width: 1180px;
+    margin: 100px auto;
+}
+.section{
+    margin-bottom: 70px;
+}
+.section ul li{
+    float: left;
+}
+.section ul li.img{
+    width: 500px;
+}
+.section ul li.img img{
+    width: 100%;
+}
+.section ul li.text_wrap{
+    width: calc( 100% - 520px );
+    margin-left : 20px
+}
+.section ul .text_wrap .title{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.section ul .text_wrap .more_info{
+    margin: 15px 0;
 }
