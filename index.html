@@ -10,6 +10,17 @@
 </head>
 <body>
     <div id="wrap">
+        <div class="gnb">
+            <nav class="clearfix">
+                <ul class="clearfix">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#section1">WORKS</a></li>
+                    <li><a href="#section2">SKILLS</a></li>
+                    <li><a href="#section3">ABOUT ME</a></li>
+                    <li><a href="#section4">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="top_container">
             <div class="contents">
                 <img src="img/main.png">
@@ -18,7 +29,7 @@
         </div>
         <div class="bottom_container">
             <!-- works -->
-            <section class="section1">
+            <section id ="section1" class="section1">
                 <h2 class="title">works</h2>
                 <div class="container clearfix">
                     <ul class="clearfix list">
@@ -39,7 +50,7 @@
             </section>
 
             <!-- skills -->
-            <section class="section2">
+            <section id ="section2" class="section2">
                 <h2 class="title">skills</h2>
                 <div class="container ">
                     <div class="contents">
@@ -69,43 +80,36 @@
                         </ul>
                     </div>
 
-                    <div class="more_info">
-
-                        <p>웹표준을 바탕으로 시멘틱하게 마크업</p>
-                        <p>유지보수를 고려한 코드 작성</p>
-
-                        <p>현재 꾸준히 코드를 잘 그려내기 위해 공부하고 있습니다.</p>
-                        <p>git, 생산성과 협업을 위한 지식을 배우고 있습니다.</p>
-                       
-                    </div>                   
+                            
                 </div>
             </section>
 
             <!-- about me -->
-            <section class="section3">
+            <section id ="section3" class="section3">
                 <h2 class="title">about me</h2>
                 <div class="container">
                     <img src="img/jinkyung.png">
-
+                    <div class="name">LEE JIN KYUNG</div>
                     <div class="motto">'Always be better than yesterday’<br><br>어제보다 0.01%라도 나은 내가 되기 위해서 노력하자!</div>
                     <div class="info">
-                        안녕하세요!요요요<!DOCTYPE html>
-                        <html lang="en">
-                        <head>
-                            <meta charset="UTF-8">
-                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                            <title>Document</title>
-                        </head>
-                        <body>
+                        안녕하세요.<br>
+                        
+
+                        <div class="more_info">
+
+                            <p>웹표준을 바탕으로 시멘틱하게 마크업 작성</p>
+                            <p>유지보수를 고려한 코드 작성</p>
+                            <p>현재 꾸준히 코드를 잘 그려내기 위해 학습중</p>
+                            <p>git, 생산성과 협업을 위한 지식 학습중</p>
                             
-                        </body>
-                        </html>
+                        </div>        
+
                     </div>
                 </div>
             </section>
 
             <!-- contact -->
-            <section class="section4">
+            <section id ="section4" class="section4">
                 <h2 class="title">contact</h2>
                 <div class="container">
                     <p><span>NAME</span> LEE JINKYUNG</p>
@@ -116,5 +120,7 @@
 
        </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

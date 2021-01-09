@@ -14,6 +14,27 @@ body{
     height: 100%;
 }
 
+.gnb{
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    -webkit-box-shadow: 0px 3px 6px -2px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0px 3px 6px -2px #ccc; /* Firefox 3.5 - 3.6 */
+    box-shadow:         0px 3px 6px -2px #ccc;
+}
+.gnb ul{
+    float: right;
+    margin-right: 30px;
+}
+.gnb li{
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 10px;
+}
 /* top_container */
 .top_container{
     background: #e2caef;
@@ -191,21 +212,22 @@ body{
     font-size: 20px;
 }
 
-.section2 .more_info{
-    clear: both;
-    margin: 50px 0 0 20px;
-} 
-
 /* sabout me section */
 .section3 .container{
     text-align: center;
 }
-.section3 .container .motto{
-    position:relative;
-    margin: 40px;
-    color: #ddd;
+.section3 .container .name{
+    font-size: 23px;
+    color: #7d7d7d;
 }
 
+.section3 .container .motto{
+    position:relative;
+    margin: 100px;
+    color: #ddd;
+    line-height: 28px;
+    padding: 20px;
+}
 .section3 .container .motto:before,
 .section3 .container .motto::after{
     content: '';
