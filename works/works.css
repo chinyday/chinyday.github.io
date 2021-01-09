@@ -39,10 +39,10 @@ body{
 /* works_container */
 .works_container{
     width: 1180px;
-    margin: 100px auto;
+    margin: 150px auto;
 }
 .section{
-    margin-bottom: 70px;
+    margin-bottom: 150px;
 }
 .section ul li{
     float: left;
@@ -51,16 +51,32 @@ body{
     width: 500px;
 }
 .section ul li.img img{
-    width: 100%;
+    width: 85%;
 }
 .section ul li.text_wrap{
-    width: calc( 100% - 520px );
-    margin-left : 20px
+    width: calc( 100% - 500px );
 }
 .section ul .text_wrap .title{
     font-size: 22px;
     margin-bottom: 20px;
 }
+.section ul .text_wrap{
+    line-height: 1.4;
+}
 .section ul .text_wrap .more_info{
     margin: 15px 0;
+}
+
+.section ul .text_wrap .website_btn{
+    padding: 5px;
+    border: 1px solid;
+    height: 30px;
+    line-height: 2;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.section ul .text_wrap .website_btn:hover{
+    background: #e2caef;
+    color: #fff;
 }
