@@ -84,8 +84,7 @@ body{
     text-align: center;
     border: 1px solid #ddd;
     border-radius: 50px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 
 .bottom_container section{
@@ -107,12 +106,13 @@ body{
 .section1 .list{
     padding: 50px 0;
 }
-.section1 .list li{
+.section1 .list li.prj{
     float: left;
     width: 33%;
+    height: 160px;
     text-align: center;
 }
-.section1 .list li img{
+.section1 .list li.prj img{
     width: 90%;
     max-width: 100%;
     backface-visibility: hidden;
