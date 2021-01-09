@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        
+        <div class="pj_header">
+           <ul class="">
+               <li>
+                    <span class="title">프로젝트 개요</span>
+                    <span class="content">교차로 내 통합관리 시스템에서 앱으로 푸시를 발송하고 푸시 내용을 관리하기 위하여</span>
+               </li>
+               <li>
+                    <span class="title">작업부분</span>
+                    <span class="content">앱푸시 관련 html, css, js 작업</span>
+               </li>
+               <li>
+                    <span class="title">작업기간</span>
+                    <span class="content">2018.7</span>
+               </li>
+           </ul>
+        </div>
+        
+        <ul class="tab_wrap">
+            <li class="tab1 bd_stlye on">발송관리</li>
+            <li class="tab2 bd_stlye">회원관리</li>
+            <li class="tab3 bd_stlye">관리자 회원 관리</li>
+            <li class="tab4">수신 대상 URL</li>
+        </ul>
+        
+        <div class="tabs"> 
+            <ul class="tab_conts tab1 on">
+                <li class="on conts_tab1-1">발송관리 리스트</li>
+                <li class="conts_tab1-2">앱 푸시 발송</li>
+                <li class="conts_tab1-3">발송/예약 팝업</li>
+                <li class="conts_tab1-4">기타 팝업</li>
+            </ul>
+            
+        </div>   
+        
+        <div class="container">
+            <div class="conts_tab1-1">
+                <ul class="cont_info">
+                    <li>발송관리 탭 리스트</li>
+                    <li>1. 발송된 푸시 리스트 영역</li>
+                    <li>2. 발송된 푸시에 관한 정보를 한 눈에 보기 쉽게 출력</li>
+                    <li>3. 관리자는 모든 정보를 볼 수 있고, 각 교차로는 자신이 보낸 푸시만 노출</li>
+                </ul>
+                <img alt="" src="img/img1.png">    
+            </div> 
+            <div class="conts_tab1-2">
+                <ul class="cont_info">
+                    <li>앱 푸시 발송</li>
+                    <li>1. 발송 버튼을 클릭하여 이동</li>
+                    <li>2. 즉시/예약 발송 선택 가능 </li>
+                    <li>3. 광고,이벤트/공지 선택 가능 </li>
+                    <li>4. 자세히보기 클릭 -> 발송안내 주의사항 탭으로 팝업 </li>
+                    <li>4. 정보통신망법 클릭 -> 관련 법령 팝업 </li>
+                </ul>
+                <img alt="" src="img/img9.png"> 
+                <ul class="cont_info">
+                    <li>- 공지를 선택할 경우, 정보통신법 변경</li>
+                </ul>   
+                <img alt="" src="/img/img10.png"> 
+                <ul class="cont_info">
+                    <li>- 예약을 선택하면, 날짜와 시간선택 활성화</li>
+                    <li>- 오늘 이후의 날짜/ 한 달 이후의 날짜/ 오늘 날짜이지만 지나간 시간일 경우 선택 불가</li>
+                </ul>   
+                <img alt="" src="img/img11.png">   
+                <img alt="" src="img/img12.png">  
+                <ul class="cont_info">
+                    <li>- 기본 정보가 다 입력되지 않으면 붉은 색으로 표기되어 입력하도록 유도(입력이 되지 않으면 발송이 되지 않음)</li>
+                </ul>  
+                <img alt="" src="img/img13.png">     
+            </div>     
+            <div class="conts_tab1-3">
+                <ul class="cont_info">
+                    <li>즉시 발송 팝업</li>
+                    <li>1. 리스트에서 제목 클릭 -> 상세 내용 팝업 활성화</li>
+                </ul>
+                 <img alt="" src="img/img14.png">    
+                 <ul class="cont_info">
+                    <li>예약 발송 팝업</li>
+                    <li>1. 예약 취소 가능</li>
+                    <li>2. 내용 수정 클릭시, 수정 창으로 이동(앱 푸시 발송창 활성화)</li>
+                </ul>   
+                 <img alt="" src="/img/img15.png">       
+            </div>
+            <div class="conts_tab1-4">
+                <ul class="cont_info">
+                    <li>- 앱 푸시 안내 탭(도움말 클릭시 활성화)</li>
+                </ul>
+                <img alt="" src="img/img5.png">  
+                <ul class="cont_info">
+                    <li>- 주의 사항 탭(주의사항 클릭시 활성화)</li>
+                </ul> 
+                <img alt="" src="img/img6.png">
+                <ul class="cont_info">
+                    <li>- 요금안내 탭</li>
+                </ul>   
+                <img alt="" src="img/img7.png">   
+                <ul class="cont_info">
+                    <li>- 주의 사항에 있는 법령 팝업</li>
+                </ul>
+                <img alt="" src="img/img8.png">  
+                <ul class="cont_info">
+                    <li>- 발송 레이어안에 있는 법령 팝업</li>
+                </ul> 
+                <img alt="" src="img/img16.png">   
+            </div>
+            
+            <div class="conts_tab2-1">
+                <ul class="cont_info">
+                    <li>회원관리 탭</li>
+                </ul>
+                <img alt="" src="img/img2.png">    
+            </div>
+            <div class="conts_tab3-1">
+                <ul class="cont_info">
+                    <li>관리자 회원 관리 탭</li>
+                </ul>
+                <img alt="" src="img/img3.png">    
+            </div>
+            <div class="conts_tab4-1">
+                <ul class="cont_info">
+                    <li>수신 대상 URL 탭</li>
+                </ul>
+                <img alt="" src="img/img4.png">    
+            </div>
+                  
+        </div>
+    
+    </div>
+    
+    
+    
+   
+</body>
+</html>
